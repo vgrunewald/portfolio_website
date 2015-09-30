@@ -11,36 +11,36 @@ body {
 	background-color: white;
 }
 #container {
-	/*width: 960px;*/
 	margin: auto;
 	background-color: white;
-	padding-top: 10px;
+	padding-top: 5%;
 	padding-left: 15%;
 	padding-right: 15%;
 }
 header {
-	border-bottom: solid 1px #ebebeb;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
+	margin-bottom: 20px;
 }
 #logo {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 400px; /*Fix logo file later to match this size*/
+	margin-left: 20%;
 }
 nav {
 	float: right;
-	margin-top: 50px;
-	max-width: 100%;
+	margin-right: 20%;
+	padding-top: 10px;
 }
 nav ul {
 	list-style-type: none;
 }
 nav ul li{
-	display: inline;
-	padding-left: 50px;
-	font-size: 14px;
+	padding-top: 10px;
+	font-size: 16px;
+	text-align: right;
 }
 nav ul li a, nav ul li a:visited, footer a, footer a:visited {
 	text-decoration: none;
@@ -55,37 +55,33 @@ nav ul li a:hover, footer a:hover {
 }
 footer {
 	clear: both;
-	border-top: solid 1px #ebebeb;
 	padding: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
-}
-#contact {
-	float: left;
-	padding-bottom: 50px;
-}
-#contact h4 {
-	color: #1bc6b4;
-}
-#contact h4, #contact h5 {
-	padding-bottom: 5px;
-	font-weight: 400;
-	font-size: 16px;
-}
-#social {
-	float: right;
+	margin-top: 20px;
+	text-align: center;
 }
 #social figure {
 	display: inline;
-	padding-right: 10px;
+	padding-right: 15px;
 }
-#copyright {
-	float: right;
-	clear: right;
-	text-align: right;
-	padding-top: 10px;
-	padding-right: 10px;
+/*HOME PAGE STYLES*/
+.banner {
+	width: 700px;
+	height: 300px;
+	background-color: red;
+	margin: auto;
+}
+#intro_text p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #3e4449;
+	width: 700px;
+	margin: auto;
+	padding-top: 20px;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 
 /*PROJECT PAGE STYLES*/
