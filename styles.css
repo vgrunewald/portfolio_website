@@ -1,0 +1,146 @@
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section, video {
+    display:block;
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/* WEBSITE-WIDE STYLES */
+body {
+	background-color: white;
+}
+#container {
+	/*width: 960px;*/
+	margin: auto;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+header {
+	border-bottom: solid 1px #ebebeb;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #3e4449;
+	font-weight: 400;
+}
+#logo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 400px; /*Fix logo file later to match this size*/
+}
+nav {
+	float: right;
+	margin-top: 50px;
+	max-width: 100%;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li{
+	display: inline;
+	padding-left: 50px;
+	font-size: 14px;
+}
+nav ul li a, nav ul li a:visited, footer a, footer a:visited {
+	text-decoration: none;
+	color: #3e4449;
+}
+nav ul li a:hover, footer a:hover {
+	text-decoration: none;
+	color: #1bc6b4;
+}
+#blank {
+	height: 10px;
+}
+footer {
+	clear: both;
+	border-top: solid 1px #ebebeb;
+	padding: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #3e4449;
+	font-weight: 400;
+}
+#contact {
+	float: left;
+	padding-bottom: 50px;
+}
+#contact h4 {
+	color: #1bc6b4;
+}
+#contact h4, #contact h5 {
+	padding-bottom: 5px;
+	font-weight: 400;
+	font-size: 16px;
+}
+#social {
+	float: right;
+}
+#social figure {
+	display: inline;
+	padding-right: 10px;
+}
+#copyright {
+	float: right;
+	clear: right;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+/*WORK PAGE STYLES*/
+/*#work_main {
+	max-width: 850px;
+	margin: auto;
+}*/
+#banner {
+	height: 380px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #1bc6b4;
+}
+#banner h1 {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 9.5rem;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+/*PROJECT PAGE STYLES*/
+#project_main {
+	padding: 20px;
+	clear: both;
+	width: 800px;
+	margin: auto;
+}
+#project_section {
+	font-family: 'Lato', sans-serif;
+	padding-bottom: 20px;
+}
+#project_section h1 {
+	font-size: 18px;
+	color: #3e4449;
+	display: inline;
+}
+#project_section h2 {
+	font-size: 18px;
+	font-weight: 300;
+	color: #3e4449;
+	display: inline;
+}
+#project_section p {
+	font-weight: 300;
+	font-size: 16px;
+	color: #303030;
+	line-height: 20px;
+	letter-spacing: .015em;
+	margin-top: 5px; 
+}
+#project_section a, #project_section a:visited {
+	color: #1bc6b4;
+	text-decoration: none;
+}
+#project_section a:hover {
+	font-weight: 700;
+}

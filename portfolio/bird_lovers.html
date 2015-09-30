@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bird Lovers of WA - Vicki Grunewald</title>
+<link type="text/css" href="../styles.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,400italic' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../jquery.bxslider.min.js"></script>
+<link href="../jquery.bxslider.css" rel="stylesheet" /> 
+</head>
+
+<body>
+
+	<div id="container">
+
+		<header>
+
+			<a href="../index.html"><img id="logo" src="../images/logo.png" title="Vicki Grunewald" alt="Vicki Grunewald" /></a>
+		
+			<nav>
+				<ul>
+					<li><a href="../index.html">WORK</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<div id="blank"></div>
+
+		<main id="project_main">
+
+		<section id="project_section"> 
+				<h1>Bird Lovers of WA</h1>
+
+				<h2>// Website Design</h2>
+
+				<p>For this course project, I created a complete website for a fictitious local organization using HTML5, CSS3 and Javascript. The purpose of the project was to experiment with and incorporate CSS3 animation and JQuery. I designed this website so these experimental features blended seamlessly with the overall purpose and design of the site. View this website <a href="http://www.vickigrunewald.com/p4_grunewald_victoria/index.html" target="_blank" title="Bird Lovers of WA">here</a>.</p>
+			</section>
+
+			<ul class="bxslider"> 
+				<li><img src="../images/bird_lovers_home.jpg" title="Bird Lovers of WA: Mock branding and homepage with animation on load" alt="Bird Lovers of WA: Mock branding and homepage with animation on load" /></li>
+				<li><img src="../images/bird_lovers_birds.jpg" title="Bird Lovers of WA: Bird guide page with hover animation" alt="Bird Lovers of WA: Bird guide with hover animation" /></li>
+				<li><img src="../images/bird_lovers_birdwatching.jpg" title="Bird Lovers of WA: Birdwatching resources page with JQuery weather widget" alt="Bird Lovers of WA: Birdwatching resources page with JQuery weather widget" /></li>
+				<li><img src="../images/bird_lovers_volunteer.jpg" title="Bird Lovers of WA: Volunteer information page with JQuery animated text and image slider" alt="Bird Lovers of WA: Volunteer information page with JQuery animated text and image slider" /></li>
+
+			</ul>
+
+		</main>
+
+		<footer>
+
+			<hgroup id="contact">
+
+				<h4>I am available for freelance work and part-time employment.</h4>
+
+				<h5><a href="mailto:vicki.grunewald@gmail.com">vicki.grunewald@gmail.com</a></h5>
+
+			</hgroup>
+
+			<figure id="social">
+
+				<figure><a href="https://www.facebook.com/Vicki.Grunewald88" target="_blank"><img src="../images/facebook.png" alt="Vicki Grunewald Facebook" title="Vicki Grunewald Facebook" /></a></figure>
+
+				<figure><a href="https://twitter.com/VickiGrunewald" target="_blank"><img src="../images/twitter.png" alt="Vicki Grunewald Twitter" title="Vicki Grunewald Twitter" /></a></figure>
+
+				<figure><a href="https://www.linkedin.com/in/vickigrunewald" target="_blank"><img src="../images/linkedin.png" alt="Vicki Grunewald LinkedIn" title="Vicki Grunewald LinkedIn" /></a></figure>
+
+				<figure><a href="https://www.pinterest.com/vickster253/" target="_blank"><img src="../images/pinterest.png" alt="Vicki Grunewald Pinterest" title="Vicki Grunewald Pinterest" /></a></figure>
+
+			</figure>
+
+			<p id="copyright">&copy; Vicki Grunewald 2015</p>
+
+		</footer>
+
+	</div>
+
+<!--Image Slider-->
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  		captions: true,
+  		responsive: true,
+  		slideWidth: 960,
+  		startSlide: 0,
+  		randomStart: false,
+  		infiniteLoop: false
+  })
+});
+</script>
+
+</body>
+</html>
