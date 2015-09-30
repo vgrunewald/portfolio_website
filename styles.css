@@ -88,25 +88,6 @@ footer {
 	padding-right: 10px;
 }
 
-/*WORK PAGE STYLES*/
-/*#work_main {
-	max-width: 850px;
-	margin: auto;
-}*/
-#banner {
-	height: 380px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #1bc6b4;
-}
-#banner h1 {
-	color: white;
-	font-family: 'Lato', sans-serif;
-	font-size: 9.5rem;
-	text-transform: uppercase;
-	margin-left: 20px;
-}
-
 /*PROJECT PAGE STYLES*/
 #project_main {
 	padding: 20px;
@@ -135,7 +116,7 @@ footer {
 	color: #303030;
 	line-height: 20px;
 	letter-spacing: .015em;
-	margin-top: 5px; 
+	margin-top: 5px;
 }
 #project_section a, #project_section a:visited {
 	color: #1bc6b4;
