@@ -79,11 +79,18 @@ footer {
 	color: #3e4449;
 	width: 700px;
 	margin: auto;
-	padding-top: 20px;
-	font-size: 1.5rem;
+	padding-top: 50px;
+	font-size: 1.3rem;
 	line-height: 2rem;
 }
-
+#intro_text a, #intro_text a:visited {
+	text-decoration: none;
+	color: #1bc6b4;
+}
+#intro_text a:hover {
+	text-decoration: none;
+	color: #3e4449;
+}
 /*PROJECT PAGE STYLES*/
 #project_main {
 	padding: 20px;
