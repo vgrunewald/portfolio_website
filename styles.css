@@ -19,8 +19,7 @@ header {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
-	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 #logo {
 	padding-top: 10px;
@@ -54,7 +53,7 @@ footer {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: center;
 }
 #social figure {
@@ -62,23 +61,28 @@ footer {
 	padding-right: 15px;
 }
 /*HOME PAGE STYLES*/
-#intro_text p {
+#intro_text p, #about_main p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #3e4449;
-	margin: auto;
-	padding-top: 10px;
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
-#intro_text a, #intro_text a:visited {
+#intro_text a, #intro_text a:visited, #about_main a, #about_main a:visited {
 	text-decoration: none;
 	color: #1bc6b4;
 }
-#intro_text a:hover {
+#intro_text a:hover, #about_main a:hover {
 	text-decoration: none;
 	color: #3e4449;
 }
+/*ABOUT PAGE STYLES*/
+#about_img img{
+	margin-bottom: 10px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 5px #828282;
+}
+
 /*PROJECT PAGE STYLES*/
 #project_main {
 	padding: 20px;
