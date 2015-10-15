@@ -7,6 +7,22 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section, 
 	border: 0;
 }
 /* WEBSITE-WIDE STYLES */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 body {
 	background-color: white;
 }
@@ -14,12 +30,15 @@ body {
 	margin: auto;
 	background-color: white;
 	width: 700px;
+	font-family: 'Lato', sans-serif;
+	color: #303030;
 }
 header {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
 	margin-bottom: 10px;
+	margin-top: 30px;
 }
 #logo {
 	padding-top: 10px;
@@ -46,20 +65,23 @@ nav ul li a:hover, footer a:hover {
 	text-decoration: none;
 	color: #1bc6b4;
 }
-#blank {
-	height: 10px;
-}
 footer {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: center;
 }
-#social figure {
-	display: inline;
-	padding-right: 15px;
+.fa-circle {
+	color: #1bc6b4;
 }
+.social-button:hover .fa-circle:before {
+	color: #3e4449;
+}
+.fa-facebook, .fa-twitter {
+	margin-top: 2px;
+}
+
 /*HOME PAGE STYLES*/
 #intro_text p, #about_main p{
 	font-family: 'Lato', sans-serif;
@@ -82,36 +104,60 @@ footer {
 	border: 5px solid #fff;
 	box-shadow: 0 0 5px #828282;
 }
-
-/*PROJECT PAGE STYLES*/
-#project_main {
-	padding: 20px;
-	clear: both;
-	width: 800px;
-	margin: auto;
+/*PORTFOLIO HOME PAGE*/
+.mainbox {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
 }
-#project_section {
-	font-family: 'Lato', sans-serif;
-	padding-bottom: 20px;
-}
-#project_section h1 {
-	font-size: 18px;
+.mainbox a, .mainbox a:visited {
 	color: #3e4449;
+	text-decoration: none;
+}
+.card {
+	width: 210px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 5px #828282;
+	margin: 10px;
+}
+.card:hover {
+	box-shadow: 0 0 5px 2px #828282;
+}
+.card section {
+	padding: 5px;
+	letter-spacing: .02em;
+	border-top: 2px solid #1bc6b4;
+}
+.card h1 {
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+.card p {
+	font-weight: 300;
+	font-size: 1.1rem;
+	padding-top: .5rem;
+}
+/*PROJECT PAGE STYLES*/
+#project_section h1 {
 	display: inline;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 #project_section h2 {
-	font-size: 18px;
-	font-weight: 300;
 	color: #3e4449;
 	display: inline;
+	font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 #project_section p {
 	font-weight: 300;
-	font-size: 16px;
-	color: #303030;
-	line-height: 20px;
 	letter-spacing: .015em;
-	margin-top: 5px;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	margin-top: .5rem;
+	margin-bottom: 1rem;
 }
 #project_section a, #project_section a:visited {
 	color: #1bc6b4;
