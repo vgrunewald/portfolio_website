@@ -32,7 +32,6 @@ header {
 #logo {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 400px; /*Fix logo file later to match this size*/
 }
 nav {
 	float: right;
