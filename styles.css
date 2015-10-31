@@ -13,23 +13,12 @@ html {
 *, *:before, *:after {
 	box-sizing: border-box;
 }
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
 body {
 	background-color: white;
 }
 #container {
 	margin: auto;
 	background-color: white;
-	width: 700px;
 	font-family: 'Lato', sans-serif;
 	color: #303030;
 }
