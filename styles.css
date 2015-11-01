@@ -34,7 +34,7 @@ header {
 	color: #3e4449;
 	font-weight: 400;
 	margin-bottom: 10px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 #logo {
 	padding-top: 10px;
@@ -49,10 +49,18 @@ nav {
 nav ul {
 	list-style-type: none;
 }
-nav ul li{
-	font-size: 2em;
-	display: inline;
-	padding: 0 10px;
+nav ul li {
+	font-size: 1.6em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+@media all and (min-width: 370px) {
+	nav ul li{
+		display: inline;
+	}
+	.nav-item + .nav-item {
+		margin-left: 35px;
+	}
 }
 @media all and (min-width: 600px) {
 	nav {
@@ -62,7 +70,7 @@ nav ul li{
 		font-size: 1.4em;
 	}
 	.nav-item + .nav-item {
-		margin-left: 60px;
+		margin-left: 80px;
 	}
 }
 @media all and (min-width: 800px) {
@@ -91,7 +99,7 @@ footer {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #3e4449;
 	font-weight: 400;
-	margin-top: 20px;
+	margin: 20px 0px;
 	text-align: center;
 }
 .fa-circle {
