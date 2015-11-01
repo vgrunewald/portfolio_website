@@ -113,11 +113,11 @@ footer {
 }
 
 /*HOME PAGE STYLES*/
-#intro_text p, #about_main p{
+#intro_text p, #about_main p, #project_section p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #3e4449;
-	font-size: 1.3rem;
+	font-size: 1.3em;
 	line-height: 2rem;
 }
 #intro_text a, #intro_text a:visited, #about_main a, #about_main a:visited {
@@ -138,6 +138,7 @@ footer {
 	width: 100%;
 	height: auto;
 }
+
 /*PORTFOLIO HOME PAGE*/
 .mainbox {
 	justify-content: center;
@@ -187,10 +188,6 @@ footer {
 	line-height: 2rem;
 }
 #project_section p {
-	font-weight: 300;
-	letter-spacing: .015em;
-	font-size: 1.1rem;
-	line-height: 1.7rem;
 	margin-top: .5rem;
 	margin-bottom: 1rem;
 }
