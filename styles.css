@@ -143,13 +143,14 @@ footer {
 	justify-content: center;
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 }
 .mainbox a, .mainbox a:visited {
 	color: #3e4449;
 	text-decoration: none;
 }
 .card {
-	width: 210px;
+	max-width: 210px;
 	border: 5px solid #fff;
 	box-shadow: 0 0 5px #828282;
 	margin: 10px;
