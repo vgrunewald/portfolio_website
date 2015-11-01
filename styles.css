@@ -21,11 +21,12 @@ body {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	color: #303030;
+	max-width: 700px;
+	margin: 0 5%;
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 800px) {
 	#container {
-		margin-right: 5%;
-		margin-left: 5%;
+		margin: auto;
 	}
 }
 header {
@@ -53,15 +54,29 @@ nav ul li{
 	display: inline;
 	padding: 0 10px;
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
 	nav {
 		margin: 1em 0 ;
 	}
 	nav ul li {
 		font-size: 1.4em;
 	}
-	li + li {
+	.nav-item + .nav-item {
 		margin-left: 60px;
+	}
+}
+@media all and (min-width: 800px) {
+	nav {
+		float: right;
+	}
+	nav ul li {
+		display: block;
+		font-size: 1.2em;
+		padding: 0px 0px;
+	}
+	.nav-item + .nav-item {
+		margin-top: 10px;
+		margin-left: 0px;
 	}
 }
 nav ul li a, nav ul li a:visited, footer a, footer a:visited {
@@ -81,7 +96,6 @@ footer {
 }
 .fa-circle {
 	color: #1bc6b4;
-
 }
 .social-button:hover .fa-circle:before {
 	color: #3e4449;
@@ -97,7 +111,6 @@ footer {
 	color: #3e4449;
 	font-size: 1.3rem;
 	line-height: 2rem;
-	padding: 0 0.8em;
 }
 #intro_text a, #intro_text a:visited, #about_main a, #about_main a:visited {
 	text-decoration: none;
@@ -107,6 +120,7 @@ footer {
 	text-decoration: none;
 	color: #3e4449;
 }
+
 /*ABOUT PAGE STYLES*/
 #about_img img{
 	margin-bottom: 10px;
