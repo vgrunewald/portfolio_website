@@ -47,6 +47,15 @@ nav ul li{
 	display: inline;
 	padding: 0 10px;
 }
+@media all and (min-width: 700px) {
+	nav ul {
+		float: right;
+	}
+	nav ul li {
+		font-size: 1.4em;
+		display: block;
+	}
+}
 nav ul li a, nav ul li a:visited, footer a, footer a:visited {
 	text-decoration: none;
 	color: #3e4449;
