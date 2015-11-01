@@ -32,6 +32,9 @@ header {
 #logo {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	max-width: 400px;
+	width: 100%;
+	height: auto;
 }
 nav {
 	padding-top: 10px;
@@ -40,9 +43,9 @@ nav ul {
 	list-style-type: none;
 }
 nav ul li{
-	padding-top: 10px;
-	font-size: 16px;
-	text-align: right;
+	font-size: 2em;
+	display: inline;
+	padding: 0 10px;
 }
 nav ul li a, nav ul li a:visited, footer a, footer a:visited {
 	text-decoration: none;
@@ -61,6 +64,7 @@ footer {
 }
 .fa-circle {
 	color: #1bc6b4;
+
 }
 .social-button:hover .fa-circle:before {
 	color: #3e4449;
@@ -76,6 +80,7 @@ footer {
 	color: #3e4449;
 	font-size: 1.3rem;
 	line-height: 2rem;
+	padding: 0 0.8em;
 }
 #intro_text a, #intro_text a:visited, #about_main a, #about_main a:visited {
 	text-decoration: none;
