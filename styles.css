@@ -59,8 +59,9 @@ nav ul li {
 		display: inline;
 	}
 	.nav-item + .nav-item {
-		margin-left: 35px;
+		margin-left: 14%;
 	}
+
 }
 @media all and (min-width: 600px) {
 	nav {
