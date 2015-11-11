@@ -57,18 +57,16 @@ nav ul li {
 @media all and (min-width: 370px) {
 	nav ul li{
 		display: inline;
+		font-size: 1.4em;
 	}
 	.nav-item + .nav-item {
-		margin-left: 14%;
+		margin-left: 16%;
 	}
 
 }
 @media all and (min-width: 600px) {
 	nav {
 		margin: 1em 0 ;
-	}
-	nav ul li {
-		font-size: 1.4em;
 	}
 	.nav-item + .nav-item {
 		margin-left: 80px;
