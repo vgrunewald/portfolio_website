@@ -21,7 +21,7 @@ body {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	color: #303030;
-	max-width: 700px;
+	max-width: 1000px;
 	margin: 0 5%;
 }
 @media all and (min-width: 800px) {
@@ -158,14 +158,39 @@ footer {
 	letter-spacing: .02em;
 	border-top: 2px solid #1bc6b4;
 }
-.card h1 {
+.card h1{
 	font-size: 1.3rem;
 	font-weight: 400;
+}
+.card a{
+	text-decoration: none;
+	color: #303030;
 }
 .card p {
 	font-weight: 300;
 	font-size: 1.1rem;
 	padding-top: .5rem;
+}
+
+div.portfolioFilter {
+	float: left;
+	width: 20%;
+}
+.portfolioFilter a {
+	display: block;
+}
+div.portfolioContainer {
+	float: right;
+	width: 80%;
+}
+main::after {
+	content: '';
+    clear: both;
+    display: block;
+}
+.portfolioContainer .card {
+	margin-left: 5%;
+	margin-bottom: 5%;
 }
 
 /*PROJECT PAGE STYLES*/
@@ -199,3 +224,43 @@ footer {
 span.bold {
 	font-weight: 400;
 }
+
+/*TEST PAGE STYLES*/
+.portfolioFilter a {
+    margin-right: 10px;
+    color:#666;
+    text-decoration:none;
+}
+
+.portfolioFilter a.current {
+    font-weight:bold;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+
