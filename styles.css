@@ -21,7 +21,7 @@ body {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	color: #303030;
-	max-width: 700px;
+	max-width: 1000px;
 	margin: 0 5%;
 }
 @media all and (min-width: 800px) {
@@ -120,11 +120,11 @@ footer {
 }
 
 /*ABOUT PAGE STYLES*/
-#about_img img, #contact_main img{
+#home_main img, #about_img img, #contact_main img{
 	margin-bottom: 10px;
 	border: 5px solid #fff;
 	box-shadow: 0 0 5px #828282;
-	max-width: 700px;
+	max-width: 1000px;
 	width: 100%;
 	height: auto;
 }
@@ -195,7 +195,7 @@ main::after {
 	font-size: 1.4rem;
 	line-height: 2rem;
 }
-#project_section p, #contact_main p {
+#home_main p, #project_section p, #contact_main p {
 	margin-top: .5rem;
 	margin-bottom: 1rem;
 }
@@ -237,19 +237,21 @@ div.portfolioFilter {
 	border-radius: 3px 3px 3px 3px;
 }
 
-@media all and (min-width: 350px) {
+@media all and (min-width: 320px) {
 	div.portfolioContainer {
-		width: 300px;
+		width: 210px;
 		margin: auto;
 	}
 }
 
-@media all and (min-width: 850px) {
+@media all and (min-width: 768px) {
 	div.portfolioContainer {
-		width: 800px;
+		width: 90%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	div.portfolioFilter {
-		width: 800px;
+		width: 90%;
 	}
 }
 

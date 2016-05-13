@@ -10,12 +10,15 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
 </head>
 
-<body>
+<body class="test">
     <div id="container">
         <header>
-            <a href="index.html"><img id="logo" src="images/logo.png" title="Vicki Grunewald" alt="Vicki Grunewald Portfolio Website" /></a>
+            <a href="index.html"><img id="logo" src="images/logo.png" title="Vicki Grunewald logo" alt="Vicki Grunewald Portfolio Website logo" /></a>
             <nav>
                 <ul>
                     <li class="nav-item"><a href="index.html">HOME</a></li>
@@ -25,88 +28,109 @@
                 </ul>
             </nav>
         </header>
-        <main class="mainbox">
-            <a href="portfolio/cadman.html">
-                <div class="card">
-                    <img src="images/cadman_sq.jpg" alt="" />
-                    <section>
-                        <h1>Cadman</h1>
-                        <p>Social media management</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/verlainemccann.html">
-                <div class="card">
-                    <img src="images/verlainemccann_sq.jpg" alt="" />
-                    <section>
-                        <h1>Verlaine &amp; McCann</h1>
-                        <p>Complete website redesign</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/purefoodfishmarket.html">
-                <div class="card">
-                    <img src="images/pure_food_sq.jpg" alt="" />
-                    <section>
-                        <h1>Pure Food Fish Market</h1>
-                        <p>Email design</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/eggplant_apps.html">
-                <div class="card">
-                    <img src="images/eggplant_apps_sq.png" alt="" />
-                    <section>
-                        <h1>Eggplant Custom Apps</h1>
-                        <p>Visual identity creation</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/bird_lovers.html">
-                <div class="card">
-                    <img src="images/bird_lovers_sq.jpg" alt="" />
-                    <section>
-                        <h1>Bird Lovers of Washington</h1>
-                        <p>Website design</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/campbell_photography.html">
-                <div class="card">
-                    <img src="images/campbell_photography_sq.png" alt="" />
-                    <section>
-                        <h1>Campbell Photography</h1>
-                        <p>Logo design</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/discover_la.html">
-                <div class="card">
-                    <img src="images/discover_la_sq.jpg" alt="" />
-                    <section>
-                        <h1>Discover Los Angeles</h1>
-                        <p>Social media visuals</p>
-                    </section>
-                </div>
-            </a>
-            <a href="portfolio/patti_caces.html">
-                <div class="card">
-                    <img src="images/patti_caces_sq.png" alt="" />
+        <main>
+            <div class="portfolioFilter">
+                <a href="#" data-filter="*" class="current">All Categories</a>
+                <a href="#" data-filter=".website">Web Design</a>
+                <a href="#" data-filter=".branding">Branding</a>
+                <a href="#" data-filter=".graphics">Graphics</a>
+                <a href="#" data-filter=".social">Social Media</a>
+
+            </div>
+
+            <div class="portfolioContainer">
+
+                <div class="card social">
+                    <a href="portfolio/cadman.html">
+                        <img src="images/cadman_sq.jpg" alt="" />
                         <section>
-                        <h1>Catered by Patti Caces</h1>
-                        <p>Rebranding campaign</p>
-                    </section>
+                            <h1>Cadman</h1>
+                            <p>Social media management</p>
+                        </section>
+                    </a>
                 </div>
-            </a>
-            <a href="portfolio/misc_graphics.html">
-                <div class="card">
-                    <img src="images/misc_graphics_sq.png" alt="" />
-                    <section>
-                        <h1>Miscellaneous Graphics</h1>
-                        <p>Variety of designs</p>
-                    </section>
+
+                <div class="card website">
+                    <a href="http://www.vickigrunewald.com/portfolio/verlainemccann.html">
+                        <img src="images/verlainemccann_sq.jpg" alt="" />
+                        <section>
+                            <h1>Verlaine &amp; McCann</h1>
+                            <p>Complete website redesign</p>
+                        </section>
+                    </a>
                 </div>
-            </a>
+
+                <div class="card graphics">
+                    <a href="http://www.vickigrunewald.com/portfolio/purefoodfishmarket.html">
+                        <img src="images/pure_food_sq.jpg" alt="" />
+                        <section>
+                            <h1>Pure Food Fish Market</h1>
+                            <p>Email design</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card branding">
+                    <a href="http://www.vickigrunewald.com/portfolio/eggplant_apps.html">
+                        <img src="images/eggplant_apps_sq.png" alt="" />
+                        <section>
+                            <h1>Eggplant Custom Apps</h1>
+                            <p>Visual identity creation</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card website">
+                    <a href="http://www.vickigrunewald.com/portfolio/bird_lovers.html">
+                        <img src="images/bird_lovers_sq.jpg" alt="" />
+                        <section>
+                            <h1>Bird Lovers of Washington</h1>
+                            <p>Website design</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card branding">
+                    <a href="http://www.vickigrunewald.com/portfolio/campbell_photography.html">
+                        <img src="images/campbell_photography_sq.png" alt="" />
+                        <section>
+                            <h1>Campbell Photography</h1>
+                            <p>Logo design</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card social">
+                    <a href="http://www.vickigrunewald.com/portfolio/discover_la.html">
+                        <img src="images/discover_la_sq.jpg" alt="" />
+                        <section>
+                            <h1>Discover Los Angeles</h1>
+                            <p>Social media visuals</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card branding">
+                    <a href="http://www.vickigrunewald.com/portfolio/patti_caces.html">
+                        <img src="images/patti_caces_sq.png" alt="" />
+                            <section>
+                            <h1>Catered by Patti Caces</h1>
+                            <p>Rebranding campaign</p>
+                        </section>
+                    </a>
+                </div>
+
+                <div class="card graphics">
+                    <a href="http://www.vickigrunewald.com/portfolio/misc_graphics.html">
+                        <img src="images/misc_graphics_sq.png" alt="" />
+                        <section>
+                            <h1>Miscellaneous Graphics</h1>
+                            <p>Variety of designs</p>
+                        </section>
+                    </a>
+                </div>
+
+            </div>
         </main>
         <footer>
             <span class="social-button">
