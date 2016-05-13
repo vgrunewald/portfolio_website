@@ -21,7 +21,7 @@ body {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	color: #303030;
-	max-width: 1000px;
+	max-width: 700px;
 	margin: 0 5%;
 }
 @media all and (min-width: 800px) {
@@ -171,18 +171,6 @@ footer {
 	font-size: 1.1rem;
 	padding-top: .5rem;
 }
-
-div.portfolioFilter {
-	float: left;
-	width: 20%;
-}
-.portfolioFilter a {
-	display: block;
-}
-div.portfolioContainer {
-	float: right;
-	width: 80%;
-}
 main::after {
 	content: '';
     clear: both;
@@ -226,14 +214,43 @@ span.bold {
 }
 
 /*TEST PAGE STYLES*/
+div.portfolioFilter {
+	padding-bottom: 20px;
+	width: 300px;
+	margin: auto;
+	text-align: center;
+	line-height: 24px;
+}
 .portfolioFilter a {
     margin-right: 10px;
     color:#666;
     text-decoration:none;
+    font-weight: 300;
 }
 
 .portfolioFilter a.current {
     font-weight:bold;
+    color: white;
+    background-color: #1bc6b4;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+@media all and (min-width: 350px) {
+	div.portfolioContainer {
+		width: 300px;
+		margin: auto;
+	}
+}
+
+@media all and (min-width: 850px) {
+	div.portfolioContainer {
+		width: 800px;
+	}
+	div.portfolioFilter {
+		width: 800px;
+	}
 }
 
 .isotope-item {
@@ -260,6 +277,10 @@ span.bold {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+}
+
+.test #container {
+	max-width: 1000px;
 }
 
 
