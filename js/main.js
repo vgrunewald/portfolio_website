@@ -1,13 +1,25 @@
 $(window).load(function(){
+    $('span.nav-btn').click(function(){
+        $('ul.nav').slideToggle();
+    })
+
+    $(window).resize(function (){
+        if ( $(window).width() > 768 ) {
+            $('ul.nav').removeAttr('style');
+        }
+    })
+
     var $container = $('.portfolioContainer');
-    $container.isotope({
+    if ($container.isotope) {
+        $container.isotope({
         filter: '*',
         animationOptions: {
             duration: 750,
             easing: 'linear',
             queue: false
-        }
-    });
+            }
+        });
+    }
 
     $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');

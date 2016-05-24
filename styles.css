@@ -45,23 +45,44 @@ header {
 }
 nav {
 	padding-top: 10px;
+	float: right;
 }
 nav ul {
 	list-style-type: none;
 }
 nav ul li {
 	font-size: 1em;
-	text-align: right;
-	margin-bottom: 10px;
 }
-@media all and (min-width: 320px) {
-	nav ul li{
-		font-size: 1em;
-		text-align: center;
-	}
-
+@media all and (max-width: 655px) {
+    nav {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .nav {
+        text-align: center;
+        display: none;
+        padding-bottom: 20px;
+    }
+    .nav li {
+        display: block;
+        padding-top: 20px;
+    }
+    .nav-btn {
+        display: block;
+        background-color: #1bc6b4;
+        color: #fff;
+        font-size: 1.3em;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-bottom: 4px;
+    }
+    .nav-btn:before {
+        font-family: FontAwesome;
+        content: "\f0c9";
+    }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 655px) {
 	nav {
 		float: right;
 		margin: 1em 0;
@@ -83,6 +104,9 @@ nav ul li a, nav ul li a:visited, footer a, footer a:visited {
 }
 nav ul li a:hover, footer a:hover {
 	text-decoration: none;
+	color: #1bc6b4;
+}
+#active-link a{
 	color: #1bc6b4;
 }
 footer {
