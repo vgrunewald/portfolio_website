@@ -9,10 +9,6 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-
 </head>
 
 <body class="test">
@@ -20,7 +16,8 @@
         <header>
             <a href="index.html"><img id="logo" src="images/logo.png" title="Vicki Grunewald logo" alt="Vicki Grunewald Portfolio Website logo" /></a>
             <nav>
-                <ul>
+                <span class="nav-btn"></span>
+                <ul class="nav">
                     <li class="nav-item"><a href="index.html">HOME</a></li>
                     <li class="nav-item" id="active-link"><a href="portfolio.html">WORK</a></li>
                     <li class="nav-item"><a href="about.html">ABOUT</a></li>
@@ -35,10 +32,21 @@
                 <a href="#" data-filter=".branding">Branding</a>
                 <a href="#" data-filter=".graphics">Graphics</a>
                 <a href="#" data-filter=".social">Social Media</a>
+                <a href="#" data-filter=".writing">Writing</a>
 
             </div>
 
             <div class="portfolioContainer">
+
+                <div class="card website branding graphics writing">
+                    <a href="portfolio/lumberjack_plumbing.html">
+                        <img src="images/lumberjack_plumbing_sq.jpg" alt="" />
+                        <section>
+                            <h1>Lumberjack Plumbing</h1>
+                            <p>Branding &amp; strategy</p>
+                        </section>
+                    </a>
+                </div>
 
                 <div class="card social">
                     <a href="portfolio/cadman.html">
@@ -167,5 +175,8 @@
             </span>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
