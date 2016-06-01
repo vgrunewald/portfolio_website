@@ -1,4 +1,6 @@
-$(window).load(function(){
+$(document).ready(function(){
+
+    //Initialize hamburger menu
     $('span.nav-btn').click(function(){
         $('ul.nav').slideToggle();
     })
@@ -7,10 +9,11 @@ $(window).load(function(){
         if ( $(window).width() > 768 ) {
             $('ul.nav').removeAttr('style');
         }
-    })
+    });
 
+    //Initialize filtering plugin
     var $container = $('.portfolioContainer');
-    if ($container.isotope) {
+        if ($container.isotope) {
         $container.isotope({
         filter: '*',
         animationOptions: {
@@ -19,7 +22,7 @@ $(window).load(function(){
             queue: false
             }
         });
-    }
+    };
 
     $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
@@ -36,4 +39,11 @@ $(window).load(function(){
          });
          return false;
     });
+
+    //Initialize accordion plugin
+    /*$(".accordion").accordion({
+        firstChildExpand: true,
+        multiExpand: true,
+    });*/
+
 });

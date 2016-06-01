@@ -205,45 +205,13 @@ main::after {
 	margin-bottom: 5%;
 }
 
-/*PROJECT PAGE STYLES*/
-#project_section h1 {
-	display: inline;
-	font-weight: 400;
-	font-size: 1.4rem;
-	line-height: 2rem;
-}
-#project_section h2 {
-	color: #3e4449;
-	display: inline;
-	font-weight: 300;
-	font-size: 1.4rem;
-	line-height: 2rem;
-}
-#home_main p, #project_section p, #contact_main p {
-	margin-top: .5rem;
-	margin-bottom: 1rem;
-}
-#project_section a, #project_section a:visited {
-	color: #1bc6b4;
-	text-decoration: none;
-}
-#project_section a:hover {
-	text-decoration: none;
-	color: #3e4449;
-}
-
-/*CONTACT PAGE STYLES*/
-span.bold {
-	font-weight: 400;
-}
-
-/*TEST PAGE STYLES*/
+/*FILTERING PORTFOLIO STYLES*/
 div.portfolioFilter {
-	padding-bottom: 20px;
-	width: 300px;
-	margin: auto;
-	text-align: center;
-	line-height: 24px;
+    padding-bottom: 20px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    line-height: 24px;
 }
 .portfolioFilter a {
     margin-right: 10px;
@@ -258,25 +226,25 @@ div.portfolioFilter {
     background-color: #1bc6b4;
     padding: 5px;
     -webkit-border-radius: 3px 3px 3px 3px;
-	border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 @media all and (min-width: 320px) {
-	div.portfolioContainer {
-		width: 210px;
-		margin: auto;
-	}
+    div.portfolioContainer {
+        width: 210px;
+        margin: auto;
+    }
 }
 
 @media all and (min-width: 768px) {
-	div.portfolioContainer {
-		width: 90%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	div.portfolioFilter {
-		width: 90%;
-	}
+    div.portfolioContainer {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    div.portfolioFilter {
+        width: 90%;
+    }
 }
 
 .isotope-item {
@@ -306,8 +274,59 @@ div.portfolioFilter {
 }
 
 .test #container {
-	max-width: 1000px;
+    max-width: 1000px;
 }
+
+/*PROJECT PAGE STYLES*/
+#project_section h1 {
+	display: inline;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+#project_section h2 {
+	color: #3e4449;
+	display: inline;
+	font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+#home_main p, #project_section p, #contact_main p {
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+}
+#project_section a, #project_section a:visited {
+	color: #1bc6b4;
+	text-decoration: none;
+}
+#project_section a:hover {
+	text-decoration: none;
+	color: #3e4449;
+}
+
+/*SERVICES PAGE STYLES*/
+div.accordion {
+    margin-top: 20px;
+}
+.accordion-header {
+    min-height: 45px;
+}
+.inner_content ul {
+    list-style-type: none;
+}
+.inner_content ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #3e4449;
+    font-size: 1.3em;
+    line-height: 2rem;
+}
+/*CONTACT PAGE STYLES*/
+span.bold {
+	font-weight: 400;
+}
+
+
 
 
 
