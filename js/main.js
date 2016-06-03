@@ -41,9 +41,11 @@ $(document).ready(function(){
     });
 
     //Initialize accordion plugin
-    $(".accordion").accordion({
-        firstChildExpand: false,
-        multiExpand: true,
-    });
+    if ($(".accordion").accordion){
+        $(".accordion").accordion({
+            firstChildExpand: false,
+            multiExpand: true,
+        });
+    }
 
 });
