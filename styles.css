@@ -125,26 +125,31 @@ footer {
 .fa-facebook, .fa-twitter {
 	margin-top: 2px;
 }
-
-/*HOME PAGE STYLES*/
-#intro_text p, #about_main p, #project_section p, #contact_main p {
+h3 {
+    padding-bottom: 15px;
+}
+p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #3e4449;
-	font-size: 1.3em;
-	line-height: 2rem;
+	font-size: 1.1em;
+	line-height: 1.5em;
 }
-#intro_text a, #intro_text a:visited, #about_main a, #about_main a:visited, #contact_main a, #contact_main a:visited {
+a, a:visited {
 	text-decoration: none;
 	color: #1bc6b4;
 }
-#intro_text a:hover, #about_main a:hover, #contact_main a:hover {
+a:hover {
 	text-decoration: none;
 	color: #3e4449;
 }
-
+/*HOME PAGE STYLES*/
+p.center_text {
+    text-align: center;
+    font-weight: 400;
+}
 /*ABOUT PAGE STYLES*/
-#home_main img, #about_img img, #contact_main img{
+#home_main img, #about_img img, #contact_main img, #services_main img {
 	margin-bottom: 10px;
 	border: 5px solid #fff;
 	box-shadow: 0 0 5px #828282;
@@ -304,23 +309,79 @@ div.portfolioFilter {
 	color: #3e4449;
 }
 
+#project_section div.bx-wrapper {
+    max-width: 920px !important;
+}
+
 /*SERVICES PAGE STYLES*/
-div.accordion {
-    margin-top: 20px;
+#services_main h2 {
+    padding-bottom: 20px;
 }
-.accordion-header {
-    min-height: 45px;
+#services_main p {
+    padding-bottom: 15px
 }
-.inner_content ul {
+#services_main section {
+    margin-bottom: 15px;
+}
+article.package_option {
+    border: 1px solid #1bc6b4;
+    text-align: center;
+    margin: 0px 10px 15px 10px;
+}
+article.package_option h3 {
+    background-color: #1bc6b4;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+p.package_info {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+p.package_pages {
+    font-weight: 700;
+    font-size: 3em;
+}
+article.package_option p a {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+ul.package_items {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 300;
     list-style-type: none;
 }
-.inner_content ul li {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: #3e4449;
-    font-size: 1.3em;
-    line-height: 2rem;
+ul.package_items li {
+    padding-bottom: 5px;
 }
+div.inner_content {
+    width: 100%;
+}
+@media all and (min-width: 768px){
+    article.package_option {
+        float: left;
+        width: 30%;
+    }
+    section#packages::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+@media all and (min-width: 850px) {
+    ul.package_items {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+
+
 /*CONTACT PAGE STYLES*/
 span.bold {
 	font-weight: 400;

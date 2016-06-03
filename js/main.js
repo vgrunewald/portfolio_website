@@ -41,9 +41,9 @@ $(document).ready(function(){
     });
 
     //Initialize accordion plugin
-    /*$(".accordion").accordion({
-        firstChildExpand: true,
+    $(".accordion").accordion({
+        firstChildExpand: false,
         multiExpand: true,
-    });*/
+    });
 
 });

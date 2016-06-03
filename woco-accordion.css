@@ -28,8 +28,9 @@
 	cursor:pointer;
 	border-right:1px solid #E0E0E0;
 	border-left:1px solid #E0E0E0;
-	min-height:20px;
+	min-height:45px;
 	transition:.25s;
+	text-transform: uppercase;
 }
 .accordion-header h2
 {
@@ -42,15 +43,15 @@
 }
 .accordion-content
 {
-	border-left:1px solid #E0E0E0;
+	/*border-left:1px solid #E0E0E0;
 	border-right:1px solid #E0E0E0;
-	border-top:1px solid #E0E0E0;
+	border-top:1px solid #E0E0E0;*/
 	display:none;
 	padding:12px;
 	color:#212121;
 	background:#FFF;
-	font-size:15px;
-	line-height:1.45em;
+	/*font-size:15px;
+	line-height:1.45em;*/
 }
 .accordion-content p
 {
