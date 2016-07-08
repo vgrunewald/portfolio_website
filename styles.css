@@ -13,6 +13,16 @@ html {
 *, *:before, *:after {
 	box-sizing: border-box;
 }
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 body {
 	background-color: white;
 }
@@ -376,7 +386,7 @@ div.inner_content {
         float: left;
         width: 30%;
     }
-    section#packages::after {
+    div#packages::after {
         content: "";
         display: block;
         clear: both;
