@@ -11,8 +11,9 @@ $(document).ready(function(){
         }
     });
 
-    //Initialize filtering plugin
-    var $container = $('.portfolioContainer');
+
+    //Initialize Isotope filtering plugin
+    var $container = $('.portfolioContainer').imagesLoaded( function() {
         if ($container.isotope) {
         $container.isotope({
         filter: '*',
@@ -38,6 +39,7 @@ $(document).ready(function(){
             }
          });
          return false;
+        });
     });
 
     //Initialize accordion plugin
