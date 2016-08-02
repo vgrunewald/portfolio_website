@@ -13,34 +13,36 @@ $(document).ready(function(){
 
 
     //Initialize Isotope filtering plugin
-    var $container = $('.portfolioContainer').imagesLoaded( function() {
-        if ($container.isotope) {
-        $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-            }
-        });
-    };
-
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
+    if ($('.portfolioContainer').imagesLoaded) {
+        var $container = $('.portfolioContainer').imagesLoaded( function() {
+            if ($container.isotope) {
+            $container.isotope({
+            filter: '*',
             animationOptions: {
                 duration: 750,
                 easing: 'linear',
                 queue: false
-            }
-         });
-         return false;
+                }
+            });
+        };
+
+        $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+             });
+             return false;
+            });
         });
-    });
+    }
 
     //Initialize accordion plugin
     if ($(".accordion").accordion){
